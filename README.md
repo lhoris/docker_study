@@ -161,3 +161,18 @@ docker cp  <호스트파일> <컨테이너명 또는 ID:컨테이너 내 파일�
 </code></pre>
 
 ## 6.Dockerfile
+### Dockerfile 형식
+<pre><code>명령어
+FROM (베이스 이미지 지정) ADD (파일 및 디렉토리 추가)
+MAINTAINER (Dockerfile 생성자) COPY (파일 복사)
+RUN (커맨드 실행) VOLUME (볼륨 마운트)
+CMD (데몬 실행) ENTRYPOINT (데몬 실행)
+LABEL (라벨 설정) USER (사용자 설정)
+EXPOSE (포트 export) WORKDIR (작업 디렉토리 지정)
+ENV (환경변수 설정) ONBUILD (build 완료 후 실행될 명령어)
+
+FROM [이미지명]
+FROM [이미지명:태그명]
+FROM [이미지명@Digest]
+
+MAINTAINER [Dockerfile 작성자]
