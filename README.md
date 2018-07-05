@@ -117,7 +117,7 @@ ex) 모든 컨테이너 삭제
 --since="" (입력한 컨테이너명 또는 ID보다 이후에 구동된 컨테이너를 표시)
 </code></pre>
 
-## 4.도커 컨테이너 중급 활용
+## 4.도커 컨테이너 활용법
 ### docker attach
 <pre><code>$ docker attach test
 // 구동중인 컨테이너에 접속할 땐 docker attach 커맨드를 사용
@@ -149,3 +149,14 @@ ex) docker rename oracle11g ora11g
 docker cp <컨테이너명 또는 ID:컨테이너 내 파일경로> <호스트 디렉토리 경로>
 docker cp  <호스트파일> <컨테이너명 또는 ID:컨테이너 내 파일경로>
 </code></pre>
+
+## 5.도커 컨테이너 이미지 생성
+### docker commit
+<pre><code>docker commit [옵션] <컨테이너명 또는 ID> [이미지명:태그명]
+[옵션]
+-a, --author="~" (생성자 (예: LHORIS (lhoris@naver.com) ) )
+-m, --message="~" (메시지)
+-p, --pause=true (컨테이너를 일시 중지한 후 commit)
+</code></pre>
+
+## 6.Dockerfile
