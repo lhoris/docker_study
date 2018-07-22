@@ -176,3 +176,18 @@ FROM [이미지명:태그명]
 FROM [이미지명@Digest]
 
 MAINTAINER [Dockerfile 작성자]
+
+
+## 7.기타
+### Container 상태에서 포트 리매핑
+<pre><code>[도커엔진On / 컨테이너Stop 상태]
+아래 파일 내부 설정 변경
+[리눅스 경로]
+/var/lib/docker/containers/[hash_of_the_container]/hostconfig.json && config.v2.json
+[맥OS 경로]
+아래 명령어 입력 후
+screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+/var/lib/docker/containers/[hash_of_the_container]/hostconfig.json && config.v2.json
+[config 설정 후 저장]
+[도커엔진 Restart]
+</code></pre>
