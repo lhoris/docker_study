@@ -23,7 +23,7 @@ IMAGE ID(Docker 이미지 ID)
 CREATED(생성일)
 VIRTUAL SIZE(사이즈)
 </code></pre>
-### docker inspect (원격저장소 이미지 목록 출력/검색하기)
+### docker inspect (이미지와 컨테이너 세부정보 출력)
 <pre><code>docker inspect [옵션] <컨테이너 또는 이미지의 이름, ID>
 ex) docker inspect centos
     docker inspect --format="{{ .Os }}" centos
