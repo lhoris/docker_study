@@ -176,10 +176,12 @@ FROM [이미지명:태그명]
 FROM [이미지명@Digest]
 
 MAINTAINER [Dockerfile 작성자]
+</code></pre>
+
 
 
 ## 7.기타
-### Container 상태에서 포트 리매핑
+### Container 상태 configration 변경
 <pre><code>[도커엔진On / 컨테이너Stop 상태]
 아래 파일 내부 설정 변경
 [리눅스 경로]
